@@ -1,0 +1,17 @@
+C:\Users\richi\source\repos\VirusTotal.VB.NET-master\bin\Debug\VirusTotalTestbed.exe
+C:\Users\richi\source\repos\VirusTotal.VB.NET-master\bin\Debug\VirusTotalTestbed.pdb
+C:\Users\richi\source\repos\VirusTotal.VB.NET-master\bin\Debug\VirusTotalTestbed.xml
+C:\Users\richi\source\repos\VirusTotal.VB.NET-master\bin\Debug\RestSharp.dll
+C:\Users\richi\source\repos\VirusTotal.VB.NET-master\bin\Debug\RestSharp.xml
+C:\Users\richi\source\repos\VirusTotal.VB.NET-master\obj\Debug\VirusTotalTestbed.frmMain.resources
+C:\Users\richi\source\repos\VirusTotal.VB.NET-master\obj\Debug\VirusTotalTestbed.Resources.resources
+C:\Users\richi\source\repos\VirusTotal.VB.NET-master\obj\Debug\VirusTotalTestbed.vbproj.GenerateResource.cache
+C:\Users\richi\source\repos\VirusTotal.VB.NET-master\obj\Debug\VirusTotalTestbed.vbproj.CoreCompileInputs.cache
+C:\Users\richi\source\repos\VirusTotal.VB.NET-master\obj\Debug\VirusTotalTestbed.vbproj.CopyComplete
+C:\Users\richi\source\repos\VirusTotal.VB.NET-master\obj\Debug\VirusTotalTestbed.exe
+C:\Users\richi\source\repos\VirusTotal.VB.NET-master\obj\Debug\VirusTotalTestbed.xml
+C:\Users\richi\source\repos\VirusTotal.VB.NET-master\obj\Debug\VirusTotalTestbed.pdb
+C:\Users\richi\source\repos\VirusTotal.VB.NET-master\bin\Debug\VirusTotalTestbed.exe.config
+C:\Users\richi\source\repos\VirusTotal.VB.NET-master\bin\Debug\MaterialSkin.dll
+C:\Users\richi\source\repos\VirusTotal.VB.NET-master\obj\Debug\VirusTotalTestbed.vbprojResolveAssemblyReference.cache
+C:\Users\richi\source\repos\VirusTotal.VB.NET-master\obj\Debug\VirusTotalTestbed.Commentdlg.resources
