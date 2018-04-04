@@ -22,6 +22,7 @@ Partial Class Commentdlg
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Commentdlg))
         Me.Commentbtn = New MaterialSkin.Controls.MaterialFlatButton()
         Me.txtComment = New MaterialSkin.Controls.MaterialSingleLineTextField()
         Me.MaterialFlatButton1 = New MaterialSkin.Controls.MaterialFlatButton()
@@ -91,6 +92,7 @@ Partial Class Commentdlg
         Me.Controls.Add(Me.txtComment)
         Me.Controls.Add(Me.Commentbtn)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Commentdlg"

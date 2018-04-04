@@ -15,3 +15,4 @@ C:\Users\richi\source\repos\VirusTotal.VB.NET-master\bin\Debug\VirusTotalTestbed
 C:\Users\richi\source\repos\VirusTotal.VB.NET-master\bin\Debug\MaterialSkin.dll
 C:\Users\richi\source\repos\VirusTotal.VB.NET-master\obj\Debug\VirusTotalTestbed.vbprojResolveAssemblyReference.cache
 C:\Users\richi\source\repos\VirusTotal.VB.NET-master\obj\Debug\VirusTotalTestbed.Commentdlg.resources
+C:\Users\richi\source\repos\VirusTotal.VB.NET-master\obj\Debug\VirusTotalTestbed.SplashScreen.resources

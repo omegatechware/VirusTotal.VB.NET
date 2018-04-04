@@ -1,4 +1,5 @@
-﻿Public Class frmMain
+﻿Imports MaterialSkin
+Public Class frmMain
     Private mScanner As VirusTotalScanner
     Private mResults As List(Of ScanResult)
     Private mResultIndex As Integer
@@ -45,13 +46,12 @@
         Try
             If IsNothing(mScanner) Then
                 If txtKey.Text = "" Then
-                    MsgBox("You must first enter your API key.", MsgBoxStyle.Information)
-                    txtKey.Focus()
-                    Return
+                    txtKey.Text = "006ba59175ac1efc8ed7066312eac3586ec27cf34925a937d670a165427f68a3"
                 End If
                 mScanner = New VirusTotalScanner(txtKey.Text)
                 mScanner.UseTLS = True
                 txtKey.Enabled = False
+                MaterialFlatButton1.Enabled = False
             End If
             If dlgOpen.ShowDialog(Me) = Windows.Forms.DialogResult.OK Then
                 txtFile.Text = dlgOpen.FileName
@@ -124,5 +124,9 @@
             prpMain.SelectedObject = Nothing
             MsgBox(ex.Message)
         End Try
+    End Sub
+
+    Private Sub MaterialFlatButton1_Click(sender As Object, e As EventArgs) Handles MaterialFlatButton1.Click
+        txtKey.Text = "006ba59175ac1efc8ed7066312eac3586ec27cf34925a937d670a165427f68a3"
     End Sub
 End Class

@@ -22,6 +22,21 @@ VirusTotalTestbed
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:VirusTotalTestbed.My.Resources.Resources.backward">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VirusTotalTestbed.My.Resources.Resources.browse">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VirusTotalTestbed.My.Resources.Resources.forward">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="T:VirusTotalTestbed.ReportResponseCode">
  <summary>
  Other than removing the URL functions and converting the IEnumerable code to utilize a 
