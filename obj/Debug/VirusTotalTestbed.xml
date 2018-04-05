@@ -32,6 +32,11 @@ VirusTotalTestbed
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:VirusTotalTestbed.My.Resources.Resources.copy_to_clipbaord">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:VirusTotalTestbed.My.Resources.Resources.forward">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

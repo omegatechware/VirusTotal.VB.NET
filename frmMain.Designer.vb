@@ -41,6 +41,10 @@ Partial Class frmMain
         Me.lblSHA5122 = New MaterialSkin.Controls.MaterialLabel()
         Me.lblLink1 = New MaterialSkin.Controls.MaterialLabel()
         Me.MaterialFlatButton1 = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.SHA256Copybtn = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.SHA512Copybtn = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.URLCopybtn = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.MD5Copybtn = New MaterialSkin.Controls.MaterialFlatButton()
         Me.cmdNext = New MaterialSkin.Controls.MaterialFlatButton()
         Me.cmdPrev = New MaterialSkin.Controls.MaterialFlatButton()
         Me.cmdOpen = New MaterialSkin.Controls.MaterialFlatButton()
@@ -52,9 +56,9 @@ Partial Class frmMain
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.prpMain.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.prpMain.Location = New System.Drawing.Point(12, 208)
+        Me.prpMain.Location = New System.Drawing.Point(12, 252)
         Me.prpMain.Name = "prpMain"
-        Me.prpMain.Size = New System.Drawing.Size(663, 331)
+        Me.prpMain.Size = New System.Drawing.Size(663, 326)
         Me.prpMain.TabIndex = 20
         '
         'lblLink2
@@ -62,9 +66,10 @@ Partial Class frmMain
         Me.lblLink2.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(183, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
         Me.lblLink2.AutoSize = True
         Me.lblLink2.DisabledLinkColor = System.Drawing.Color.FromArgb(CType(CType(158, Byte), Integer), CType(CType(158, Byte), Integer), CType(CType(158, Byte), Integer))
+        Me.lblLink2.Enabled = False
         Me.lblLink2.Font = New System.Drawing.Font("Roboto", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblLink2.LinkColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(79, Byte), Integer), CType(CType(254, Byte), Integer))
-        Me.lblLink2.Location = New System.Drawing.Point(88, 182)
+        Me.lblLink2.Location = New System.Drawing.Point(88, 215)
         Me.lblLink2.Name = "lblLink2"
         Me.lblLink2.Size = New System.Drawing.Size(13, 19)
         Me.lblLink2.TabIndex = 19
@@ -115,15 +120,16 @@ Partial Class frmMain
         Me.cmdReport.AutoSize = True
         Me.cmdReport.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.cmdReport.Depth = 0
+        Me.cmdReport.Enabled = False
         Me.cmdReport.Icon = Nothing
         Me.cmdReport.Location = New System.Drawing.Point(12, 65)
         Me.cmdReport.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.cmdReport.MouseState = MaterialSkin.MouseState.HOVER
         Me.cmdReport.Name = "cmdReport"
         Me.cmdReport.Primary = False
-        Me.cmdReport.Size = New System.Drawing.Size(72, 36)
+        Me.cmdReport.Size = New System.Drawing.Size(115, 36)
         Me.cmdReport.TabIndex = 25
-        Me.cmdReport.Text = "Report"
+        Me.cmdReport.Text = "View Results"
         Me.cmdReport.UseVisualStyleBackColor = True
         '
         'cmdSubmit
@@ -131,15 +137,16 @@ Partial Class frmMain
         Me.cmdSubmit.AutoSize = True
         Me.cmdSubmit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.cmdSubmit.Depth = 0
+        Me.cmdSubmit.Enabled = False
         Me.cmdSubmit.Icon = Nothing
-        Me.cmdSubmit.Location = New System.Drawing.Point(92, 64)
+        Me.cmdSubmit.Location = New System.Drawing.Point(124, 65)
         Me.cmdSubmit.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.cmdSubmit.MouseState = MaterialSkin.MouseState.HOVER
         Me.cmdSubmit.Name = "cmdSubmit"
         Me.cmdSubmit.Primary = False
-        Me.cmdSubmit.Size = New System.Drawing.Size(71, 36)
+        Me.cmdSubmit.Size = New System.Drawing.Size(172, 36)
         Me.cmdSubmit.TabIndex = 26
-        Me.cmdSubmit.Text = "Submit"
+        Me.cmdSubmit.Text = "Submit For Scanning"
         Me.cmdSubmit.UseVisualStyleBackColor = True
         '
         'cmdRescan
@@ -147,15 +154,16 @@ Partial Class frmMain
         Me.cmdRescan.AutoSize = True
         Me.cmdRescan.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.cmdRescan.Depth = 0
+        Me.cmdRescan.Enabled = False
         Me.cmdRescan.Icon = Nothing
-        Me.cmdRescan.Location = New System.Drawing.Point(171, 64)
+        Me.cmdRescan.Location = New System.Drawing.Point(293, 65)
         Me.cmdRescan.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.cmdRescan.MouseState = MaterialSkin.MouseState.HOVER
         Me.cmdRescan.Name = "cmdRescan"
         Me.cmdRescan.Primary = False
-        Me.cmdRescan.Size = New System.Drawing.Size(73, 36)
+        Me.cmdRescan.Size = New System.Drawing.Size(103, 36)
         Me.cmdRescan.TabIndex = 27
-        Me.cmdRescan.Text = "Rescan"
+        Me.cmdRescan.Text = "Rescan File"
         Me.cmdRescan.UseVisualStyleBackColor = True
         '
         'cmdComment
@@ -163,8 +171,9 @@ Partial Class frmMain
         Me.cmdComment.AutoSize = True
         Me.cmdComment.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.cmdComment.Depth = 0
+        Me.cmdComment.Enabled = False
         Me.cmdComment.Icon = Nothing
-        Me.cmdComment.Location = New System.Drawing.Point(252, 65)
+        Me.cmdComment.Location = New System.Drawing.Point(393, 65)
         Me.cmdComment.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.cmdComment.MouseState = MaterialSkin.MouseState.HOVER
         Me.cmdComment.Name = "cmdComment"
@@ -180,7 +189,7 @@ Partial Class frmMain
         Me.lblPage.Depth = 0
         Me.lblPage.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.lblPage.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblPage.Location = New System.Drawing.Point(397, 73)
+        Me.lblPage.Location = New System.Drawing.Point(518, 73)
         Me.lblPage.MouseState = MaterialSkin.MouseState.HOVER
         Me.lblPage.Name = "lblPage"
         Me.lblPage.Size = New System.Drawing.Size(47, 19)
@@ -219,7 +228,7 @@ Partial Class frmMain
         Me.lblSHA2561.Depth = 0
         Me.lblSHA2561.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.lblSHA2561.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblSHA2561.Location = New System.Drawing.Point(12, 130)
+        Me.lblSHA2561.Location = New System.Drawing.Point(12, 141)
         Me.lblSHA2561.MouseState = MaterialSkin.MouseState.HOVER
         Me.lblSHA2561.Name = "lblSHA2561"
         Me.lblSHA2561.Size = New System.Drawing.Size(71, 19)
@@ -232,7 +241,7 @@ Partial Class frmMain
         Me.lblSHA2562.Depth = 0
         Me.lblSHA2562.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.lblSHA2562.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblSHA2562.Location = New System.Drawing.Point(88, 130)
+        Me.lblSHA2562.Location = New System.Drawing.Point(89, 141)
         Me.lblSHA2562.MouseState = MaterialSkin.MouseState.HOVER
         Me.lblSHA2562.Name = "lblSHA2562"
         Me.lblSHA2562.Size = New System.Drawing.Size(13, 19)
@@ -245,7 +254,7 @@ Partial Class frmMain
         Me.lblSHA5121.Depth = 0
         Me.lblSHA5121.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.lblSHA5121.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblSHA5121.Location = New System.Drawing.Point(12, 156)
+        Me.lblSHA5121.Location = New System.Drawing.Point(12, 178)
         Me.lblSHA5121.MouseState = MaterialSkin.MouseState.HOVER
         Me.lblSHA5121.Name = "lblSHA5121"
         Me.lblSHA5121.Size = New System.Drawing.Size(71, 19)
@@ -258,7 +267,7 @@ Partial Class frmMain
         Me.lblSHA5122.Depth = 0
         Me.lblSHA5122.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.lblSHA5122.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblSHA5122.Location = New System.Drawing.Point(89, 156)
+        Me.lblSHA5122.Location = New System.Drawing.Point(89, 178)
         Me.lblSHA5122.MouseState = MaterialSkin.MouseState.HOVER
         Me.lblSHA5122.Name = "lblSHA5122"
         Me.lblSHA5122.Size = New System.Drawing.Size(13, 19)
@@ -271,7 +280,7 @@ Partial Class frmMain
         Me.lblLink1.Depth = 0
         Me.lblLink1.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.lblLink1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblLink1.Location = New System.Drawing.Point(42, 182)
+        Me.lblLink1.Location = New System.Drawing.Point(43, 215)
         Me.lblLink1.MouseState = MaterialSkin.MouseState.HOVER
         Me.lblLink1.Name = "lblLink1"
         Me.lblLink1.Size = New System.Drawing.Size(40, 19)
@@ -295,13 +304,82 @@ Partial Class frmMain
         Me.MaterialFlatButton1.Text = "Default"
         Me.MaterialFlatButton1.UseVisualStyleBackColor = True
         '
+        'SHA256Copybtn
+        '
+        Me.SHA256Copybtn.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.SHA256Copybtn.AutoSize = True
+        Me.SHA256Copybtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.SHA256Copybtn.Depth = 0
+        Me.SHA256Copybtn.Enabled = False
+        Me.SHA256Copybtn.Icon = Global.VirusTotalTestbed.My.Resources.Resources.copy_to_clipbaord
+        Me.SHA256Copybtn.Location = New System.Drawing.Point(644, 133)
+        Me.SHA256Copybtn.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.SHA256Copybtn.MouseState = MaterialSkin.MouseState.HOVER
+        Me.SHA256Copybtn.Name = "SHA256Copybtn"
+        Me.SHA256Copybtn.Primary = False
+        Me.SHA256Copybtn.Size = New System.Drawing.Size(44, 36)
+        Me.SHA256Copybtn.TabIndex = 43
+        Me.SHA256Copybtn.UseVisualStyleBackColor = True
+        '
+        'SHA512Copybtn
+        '
+        Me.SHA512Copybtn.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.SHA512Copybtn.AutoSize = True
+        Me.SHA512Copybtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.SHA512Copybtn.Depth = 0
+        Me.SHA512Copybtn.Enabled = False
+        Me.SHA512Copybtn.Icon = Global.VirusTotalTestbed.My.Resources.Resources.copy_to_clipbaord
+        Me.SHA512Copybtn.Location = New System.Drawing.Point(644, 170)
+        Me.SHA512Copybtn.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.SHA512Copybtn.MouseState = MaterialSkin.MouseState.HOVER
+        Me.SHA512Copybtn.Name = "SHA512Copybtn"
+        Me.SHA512Copybtn.Primary = False
+        Me.SHA512Copybtn.Size = New System.Drawing.Size(44, 36)
+        Me.SHA512Copybtn.TabIndex = 42
+        Me.SHA512Copybtn.UseVisualStyleBackColor = True
+        '
+        'URLCopybtn
+        '
+        Me.URLCopybtn.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.URLCopybtn.AutoSize = True
+        Me.URLCopybtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.URLCopybtn.Depth = 0
+        Me.URLCopybtn.Enabled = False
+        Me.URLCopybtn.Icon = Global.VirusTotalTestbed.My.Resources.Resources.copy_to_clipbaord
+        Me.URLCopybtn.Location = New System.Drawing.Point(644, 207)
+        Me.URLCopybtn.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.URLCopybtn.MouseState = MaterialSkin.MouseState.HOVER
+        Me.URLCopybtn.Name = "URLCopybtn"
+        Me.URLCopybtn.Primary = False
+        Me.URLCopybtn.Size = New System.Drawing.Size(44, 36)
+        Me.URLCopybtn.TabIndex = 41
+        Me.URLCopybtn.UseVisualStyleBackColor = True
+        '
+        'MD5Copybtn
+        '
+        Me.MD5Copybtn.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.MD5Copybtn.AutoSize = True
+        Me.MD5Copybtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.MD5Copybtn.Depth = 0
+        Me.MD5Copybtn.Enabled = False
+        Me.MD5Copybtn.Icon = Global.VirusTotalTestbed.My.Resources.Resources.copy_to_clipbaord
+        Me.MD5Copybtn.Location = New System.Drawing.Point(644, 96)
+        Me.MD5Copybtn.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.MD5Copybtn.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MD5Copybtn.Name = "MD5Copybtn"
+        Me.MD5Copybtn.Primary = False
+        Me.MD5Copybtn.Size = New System.Drawing.Size(44, 36)
+        Me.MD5Copybtn.TabIndex = 40
+        Me.MD5Copybtn.UseVisualStyleBackColor = True
+        '
         'cmdNext
         '
         Me.cmdNext.AutoSize = True
         Me.cmdNext.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.cmdNext.Depth = 0
+        Me.cmdNext.Enabled = False
         Me.cmdNext.Icon = Global.VirusTotalTestbed.My.Resources.Resources.forward
-        Me.cmdNext.Location = New System.Drawing.Point(445, 65)
+        Me.cmdNext.Location = New System.Drawing.Point(562, 65)
         Me.cmdNext.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.cmdNext.MouseState = MaterialSkin.MouseState.HOVER
         Me.cmdNext.Name = "cmdNext"
@@ -315,8 +393,9 @@ Partial Class frmMain
         Me.cmdPrev.AutoSize = True
         Me.cmdPrev.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.cmdPrev.Depth = 0
+        Me.cmdPrev.Enabled = False
         Me.cmdPrev.Icon = Global.VirusTotalTestbed.My.Resources.Resources.backward
-        Me.cmdPrev.Location = New System.Drawing.Point(353, 64)
+        Me.cmdPrev.Location = New System.Drawing.Point(476, 65)
         Me.cmdPrev.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.cmdPrev.MouseState = MaterialSkin.MouseState.HOVER
         Me.cmdPrev.Name = "cmdPrev"
@@ -332,7 +411,7 @@ Partial Class frmMain
         Me.cmdOpen.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.cmdOpen.Depth = 0
         Me.cmdOpen.Icon = Global.VirusTotalTestbed.My.Resources.Resources.browse
-        Me.cmdOpen.Location = New System.Drawing.Point(641, 38)
+        Me.cmdOpen.Location = New System.Drawing.Point(644, 38)
         Me.cmdOpen.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.cmdOpen.MouseState = MaterialSkin.MouseState.HOVER
         Me.cmdOpen.Name = "cmdOpen"
@@ -345,7 +424,11 @@ Partial Class frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(687, 547)
+        Me.ClientSize = New System.Drawing.Size(687, 586)
+        Me.Controls.Add(Me.SHA256Copybtn)
+        Me.Controls.Add(Me.SHA512Copybtn)
+        Me.Controls.Add(Me.URLCopybtn)
+        Me.Controls.Add(Me.MD5Copybtn)
         Me.Controls.Add(Me.MaterialFlatButton1)
         Me.Controls.Add(Me.lblLink1)
         Me.Controls.Add(Me.lblSHA5122)
@@ -367,7 +450,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.lblLink2)
         Me.Controls.Add(Me.prpMain)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MinimumSize = New System.Drawing.Size(505, 480)
+        Me.MinimumSize = New System.Drawing.Size(625, 534)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "VirusTotal Interface Testbed"
@@ -396,4 +479,8 @@ Partial Class frmMain
     Friend WithEvents lblSHA5122 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents lblLink1 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MaterialFlatButton1 As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents MD5Copybtn As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents URLCopybtn As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents SHA512Copybtn As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents SHA256Copybtn As MaterialSkin.Controls.MaterialFlatButton
 End Class

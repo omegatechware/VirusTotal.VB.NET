@@ -65,6 +65,17 @@ Public Class frmMain
                 lblLink2.Text = Link
                 lblLink2.Links.Clear()
                 lblLink2.Links.Add(0, Link.Length)
+                cmdReport.Enabled = True
+                cmdSubmit.Enabled = True
+                cmdRescan.Enabled = True
+                cmdComment.Enabled = True
+                cmdPrev.Enabled = True
+                cmdNext.Enabled = True
+                MD5Copybtn.Enabled = True
+                SHA256Copybtn.Enabled = True
+                SHA512Copybtn.Enabled = True
+                URLCopybtn.Enabled = True
+                lblLink2.Enabled = True
             End If
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -136,5 +147,21 @@ Public Class frmMain
 
     Private Sub MaterialFlatButton1_Click(sender As Object, e As EventArgs) Handles MaterialFlatButton1.Click
         txtKey.Text = "006ba59175ac1efc8ed7066312eac3586ec27cf34925a937d670a165427f68a3"
+    End Sub
+
+    Private Sub MD5Copybtn_Click(sender As Object, e As EventArgs) Handles MD5Copybtn.Click
+        Clipboard.SetText(lblMD52.Text)
+    End Sub
+
+    Private Sub SHA256Copybtn_Click(sender As Object, e As EventArgs) Handles SHA256Copybtn.Click
+        Clipboard.SetText(lblSHA2562.Text)
+    End Sub
+
+    Private Sub SHA512Copybtn_Click(sender As Object, e As EventArgs) Handles SHA512Copybtn.Click
+        Clipboard.SetText(lblSHA5122.Text)
+    End Sub
+
+    Private Sub URLCopybtn_Click(sender As Object, e As EventArgs) Handles URLCopybtn.Click
+        Clipboard.SetText(lblLink2.Text)
     End Sub
 End Class
