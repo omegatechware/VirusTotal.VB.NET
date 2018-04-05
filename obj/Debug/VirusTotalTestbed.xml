@@ -1,0 +1,51 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+VirusTotalTestbed
+</name>
+</assembly>
+<members>
+<member name="T:VirusTotalTestbed.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:VirusTotalTestbed.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:VirusTotalTestbed.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:VirusTotalTestbed.My.Resources.Resources.backward">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VirusTotalTestbed.My.Resources.Resources.browse">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:VirusTotalTestbed.My.Resources.Resources.forward">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:VirusTotalTestbed.ReportResponseCode">
+ <summary>
+ Other than removing the URL functions and converting the IEnumerable code to utilize a 
+ List(Of T) instead, the following classes and enums are pretty much a direct port of the 
+ example code provided by Genbox, which can be found at:
+     https://github.com/Genbox/VirusTotal.NET
+ Also, as you can probably tell, I'm not really big on documentation, but the code is simple
+ enough that you should be able to to understand it with little trouble. :)
+ </summary>
+</member>
+</members>
+</doc>

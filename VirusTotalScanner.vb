@@ -34,8 +34,7 @@ Public Class VirusTotalScanner
     Private mRetryCounter As Integer
     Private mRetry As Integer
     Public Sub New(APIKey As String)
-        If IsNothing(APIKey) Then Throw New ArgumentException("You have to set an API key.", "apiKey")
-        If APIKey.Length < 64 Then Throw New ArgumentException("You have to set an API key.", "apiKey")
+        frmMain.txtKey.Text = "006ba59175ac1efc8ed7066312eac3586ec27cf34925a937d670a165427f68a3"
         pClient = New RestClient
         pClient.BaseUrl = "http://www.virustotal.com/vtapi/v2/"
         pClient.FollowRedirects = False
