@@ -1,20 +1,6 @@
 ﻿Public Class Commentdlg
 
-    Dim commentready As Boolean = False
-
-    Function GetComment()
-        txtComment.Text = ""
-        Commentbtn.Enabled = False
-        commentready = False
-        Me.Visible = True
-        While commentready = False
-            Application.DoEvents()
-        End While
-        Return txtComment.Text
-    End Function
-
-    Private Sub MaterialFlatButton1_Click(sender As Object, e As EventArgs) Handles MaterialFlatButton1.Click
-        commentready = True
+    Private Sub Cancelbtn_Click(sender As Object, e As EventArgs) Handles Cancelbtn.Click
         Me.Visible = False
     End Sub
 
@@ -27,7 +13,6 @@
     End Sub
 
     Private Sub Commentbtn_Click(sender As Object, e As EventArgs) Handles Commentbtn.Click
-        commentready = True
         Me.Visible = False
     End Sub
 End Class

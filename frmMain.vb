@@ -93,7 +93,15 @@ Public Class frmMain
     Private Sub cmdComment_Click_1(sender As Object, e As EventArgs) Handles cmdComment.Click
         Dim Comment As String
         Try
-            Comment = Commentdlg.GetComment
+            Commentdlg.txtComment.Text = ""
+            Commentdlg.Commentbtn.Enabled = False
+            Commentdlg.ShowDialog()
+
+            If Commentdlg.DialogResult = DialogResult.OK Then
+                Comment = Commentdlg.txtComment.Text.ToString
+            Else
+                Return
+            End If
             If Comment = "" Then Return
             mResults = mScanner.CreateComment(mSHA256, Comment)
             ResultIndex = 1

@@ -25,7 +25,7 @@ Partial Class Commentdlg
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Commentdlg))
         Me.Commentbtn = New MaterialSkin.Controls.MaterialFlatButton()
         Me.txtComment = New MaterialSkin.Controls.MaterialSingleLineTextField()
-        Me.MaterialFlatButton1 = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.Cancelbtn = New MaterialSkin.Controls.MaterialFlatButton()
         Me.SuspendLayout()
         '
         'Commentbtn
@@ -34,6 +34,7 @@ Partial Class Commentdlg
         Me.Commentbtn.AutoSize = True
         Me.Commentbtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.Commentbtn.Depth = 0
+        Me.Commentbtn.DialogResult = System.Windows.Forms.DialogResult.OK
         Me.Commentbtn.Enabled = False
         Me.Commentbtn.Icon = Nothing
         Me.Commentbtn.Location = New System.Drawing.Point(473, 9)
@@ -65,22 +66,23 @@ Partial Class Commentdlg
         Me.txtComment.TabStop = False
         Me.txtComment.UseSystemPasswordChar = False
         '
-        'MaterialFlatButton1
+        'Cancelbtn
         '
-        Me.MaterialFlatButton1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.MaterialFlatButton1.AutoSize = True
-        Me.MaterialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialFlatButton1.Depth = 0
-        Me.MaterialFlatButton1.Icon = Nothing
-        Me.MaterialFlatButton1.Location = New System.Drawing.Point(392, 9)
-        Me.MaterialFlatButton1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialFlatButton1.Name = "MaterialFlatButton1"
-        Me.MaterialFlatButton1.Primary = False
-        Me.MaterialFlatButton1.Size = New System.Drawing.Size(73, 36)
-        Me.MaterialFlatButton1.TabIndex = 3
-        Me.MaterialFlatButton1.Text = "Cancel"
-        Me.MaterialFlatButton1.UseVisualStyleBackColor = True
+        Me.Cancelbtn.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Cancelbtn.AutoSize = True
+        Me.Cancelbtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.Cancelbtn.Depth = 0
+        Me.Cancelbtn.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.Cancelbtn.Icon = Nothing
+        Me.Cancelbtn.Location = New System.Drawing.Point(392, 9)
+        Me.Cancelbtn.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.Cancelbtn.MouseState = MaterialSkin.MouseState.HOVER
+        Me.Cancelbtn.Name = "Cancelbtn"
+        Me.Cancelbtn.Primary = False
+        Me.Cancelbtn.Size = New System.Drawing.Size(73, 36)
+        Me.Cancelbtn.TabIndex = 3
+        Me.Cancelbtn.Text = "Cancel"
+        Me.Cancelbtn.UseVisualStyleBackColor = True
         '
         'Commentdlg
         '
@@ -88,7 +90,7 @@ Partial Class Commentdlg
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(575, 54)
         Me.ControlBox = False
-        Me.Controls.Add(Me.MaterialFlatButton1)
+        Me.Controls.Add(Me.Cancelbtn)
         Me.Controls.Add(Me.txtComment)
         Me.Controls.Add(Me.Commentbtn)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
@@ -106,5 +108,5 @@ Partial Class Commentdlg
 
     Friend WithEvents Commentbtn As MaterialSkin.Controls.MaterialFlatButton
     Friend WithEvents txtComment As MaterialSkin.Controls.MaterialSingleLineTextField
-    Friend WithEvents MaterialFlatButton1 As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents Cancelbtn As MaterialSkin.Controls.MaterialFlatButton
 End Class
